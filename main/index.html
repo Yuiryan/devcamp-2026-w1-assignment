@@ -92,20 +92,11 @@
         }
         .nav-home:hover { transform: scale(1.1); box-shadow: 0 0 15px rgba(200,151,62,0.3); }
 
-        /* ===== HOME ICON (SVG căn nhà) ===== */
+        /* ===== HOME ICON ===== */
         .nav-home .home-icon-svg {
             width: 24px;
             height: 24px;
         }
-
-        /* Nếu bạn muốn thay bằng ảnh JPG, uncomment dòng dưới và comment phần SVG trong HTML */
-        /*
-        .nav-home img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        */
 
         .nav-logo {
             position: absolute;
@@ -543,14 +534,9 @@
     </div>
 
     <!-- LOGO -->
-    <div class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-        <!-- 
-            ĐỂ THÊM LOGO JPG:
-            1. Thêm class "has-logo-img" vào div .nav-logo phía trên
-            2. Thay "logo.jpg" thành tên file logo của bạn
-        -->
+    <div class="nav-logo has-logo-img" onclick="window.scrollTo({top:0,behavior:'smooth'})">
         <img src="logo.jpg" alt="Logo">
-        <span class="nav-logo-text" data-lang-vi="Tiếng Nhật dễ vlー" data-lang-en="Japanese Ezー" data-lang-jp="日本語マスター">日本語マスター</span>
+        <span class="nav-logo-text" data-lang-vi="Tiếng Nhật dễ vlー" data-lang-en="Japanesezー" data-lang-jp="日本語マスター">Japanesezー</span>
     </div>
 
     <!-- LANGUAGE SELECTOR -->
@@ -565,7 +551,7 @@
 <section class="hero" id="top">
     <div class="hero-badge" data-lang-vi="LỘ TRÌNH TỰ HỌC" data-lang-en="SELF-STUDY ROADMAP" data-lang-jp="独学ロードマップ">LỘ TRÌNH TỰ HỌC</div>
     <h1>
-        <span data-lang-vi="Học hay thi ngay" data-lang-en="From Zero to " data-lang-jp="ゼロから">Học ngay thi hay N3</span><span class="highlight">N3</span>
+        <span data-lang-vi="Học hay thi ngay" data-lang-en="From Zero to " data-lang-jp="ゼロから">Học ngay thi hay</span><span class="highlight">N3</span>
         <br>
     </h1>
     <p data-lang-vi="Cần kiên trì mỗi ngày — chống chỉ định cho người lười :>"
@@ -603,8 +589,7 @@
                 <div class="books-grid">
                     <!-- SÁCH 1: MINNA 1 -->
                     <div class="book-card">
-                        <div class="book-cover">
-                            <!-- THÊM ẢNH: thêm class "has-img", đổi src -->
+                        <div class="book-cover has-img">
                             <img src="minna1.jpg" alt="Minna 1">
                             <span class="placeholder-text">📖<br>Thêm ảnh<br>MINNA 1</span>
                         </div>
@@ -612,7 +597,7 @@
                     </div>
                     <!-- SÁCH 2: MINNA 2 -->
                     <div class="book-card">
-                        <div class="book-cover">
+                        <div class="book-cover has-img">
                             <img src="minna2.jpg" alt="Minna 2">
                             <span class="placeholder-text">📖<br>Thêm ảnh<br>MINNA 2</span>
                         </div>
@@ -620,8 +605,8 @@
                     </div>
                     <!-- SÁCH 3: 15p Kanji -->
                     <div class="book-card">
-                        <div class="book-cover">
-                            <img src="15p-kanji.jpg" alt="15p Kanji">
+                        <div class="book-cover has-img">
+                            <img src="15p_kanji.jpg" alt="15p Kanji">
                             <span class="placeholder-text">📖<br>Thêm ảnh<br>15p Kanji</span>
                         </div>
                         <div class="book-name">15p Kanji</div>
@@ -630,7 +615,7 @@
                     <div class="book-card">
                         <div class="book-cover">
                             <img src="jvc5k.jpg" alt="JVC 5k">
-                            <span class="placeholder-text">📖<br>Thêm ảnh<br>JVC 5k</span>
+                            <span class="placeholder-text">📖<br>Sách Hán Tự JVC 5k</span>
                         </div>
                         <div class="book-name">Hán tự JVC 5k</div>
                     </div>
@@ -638,7 +623,7 @@
                     <div class="book-card">
                         <div class="book-cover">
                             <img src="jvc4k.jpg" alt="JVC 4k">
-                            <span class="placeholder-text">📖<br>Thêm ảnh<br>JVC 4k</span>
+                            <span class="placeholder-text">📖<br>Sách Hán Tự JVC 4k</span>
                         </div>
                         <div class="book-name">Hán tự JVC 4k</div>
                     </div>
@@ -739,34 +724,34 @@
                     <div class="book-card">
                         <div class="book-cover">
                             <img src="jvc3k.jpg" alt="JVC 3k">
-                            <span class="placeholder-text">📖<br>Thêm ảnh<br>JVC 3k</span>
+                            <span class="placeholder-text">📖Sách Hán Tự<br>JVC 3k</span>
                         </div>
                         <div class="book-name">Hán tự JVC 3k</div>
                     </div>
                     <div class="book-card">
                         <div class="book-cover">
-                            <img src="shinkanzen-n3.jpg" alt="Shinkanzen N3">
+                            <img src="shinkanzen_N3.jpg" alt="Shinkanzen N3">
                             <span class="placeholder-text">📖<br>Thêm ảnh<br>Shinkanzen</span>
                         </div>
                         <div class="book-name">Shinkanzen N3</div>
                     </div>
                     <div class="book-card">
                         <div class="book-cover">
-                            <img src="goukaku-dekiru.jpg" alt="Goukaku Dekiru">
+                            <img src="goukaku_dekiru.jpg" alt="Goukaku Dekiru">
                             <span class="placeholder-text">📖<br>Thêm ảnh<br>Goukaku</span>
                         </div>
                         <div class="book-name">Goukaku Dekiru</div>
                     </div>
                     <div class="book-card">
                         <div class="book-cover">
-                            <img src="try-n3.jpg" alt="Try N3">
+                            <img src="try_n3.jpg" alt="Try N3">
                             <span class="placeholder-text">📖<br>Thêm ảnh<br>Try N3</span>
                         </div>
                         <div class="book-name">Try N3</div>
                     </div>
                     <div class="book-card">
                         <div class="book-cover">
-                            <img src="irasuto.jpg" alt="Irasuto de Wakaru">
+                            <img src="irasuto_n3.jpg" alt="Irasuto de Wakaru">
                             <span class="placeholder-text">📖<br>Thêm ảnh<br>Irasuto</span>
                         </div>
                         <div class="book-name">Irasuto de Wakaru</div>
